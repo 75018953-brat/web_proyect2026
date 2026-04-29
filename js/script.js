@@ -24,9 +24,24 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-let likes = 0;
+const btnLike = document.getElementById("btnLike");
+const contador = document.getElementById("contadorLikes");
 
-document.getElementById("btnLike").addEventListener("click", () => {
-  likes++;
-  document.getElementById("contadorLikes").textContent = likes;
+let likes = 0;
+let activo = false;
+
+btnLike.addEventListener("click", () => {
+  if (!activo) {
+    likes++;
+    activo = true;
+    btnLike.classList.add("activo");
+    btnLike.innerHTML = "💚 Te gusta";
+  } else {
+    likes--;
+    activo = false;
+    btnLike.classList.remove("activo");
+    btnLike.innerHTML = "❤️ Me gusta";
+  }
+
+  contador.textContent = likes;
 });
