@@ -23,3 +23,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+let likes = 0;
+
+document.getElementById("btnLike").addEventListener("click", () => {
+  likes++;
+  document.getElementById("contadorLikes").textContent = likes;
+});
