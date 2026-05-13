@@ -74,6 +74,35 @@
             </div>
         </div>
 
+     <!-- FORMULARIO -->
+<section class="datos-solicitante">
+    <h2>REGISTRO</h2>
+    <p>Contáctanos llenando todos los campos</p>
+
+    <form id="miformulario" action="guardar_cliente.php" method="POST">
+        <div class="ds-campo">
+            <label>Nombre</label>
+            <input type="text" name="nombre_cliente" placeholder="Tu Nombre" required>
+        </div>
+
+        <div class="ds-campo">
+            <label>Teléfono</label>
+            <input type="tel" name="telefono_cliente" placeholder="Tu Teléfono" required>
+        </div>
+
+        <div class="ds-campo">
+            <label>Correo</label>
+            <input type="email" name="correo_cliente" placeholder="Tu correo" required>
+        </div>
+
+        <div class="ds-campo">
+            <label>Mensaje</label>
+            <textarea name="mensaje_cliente" placeholder="Escribe tu mensaje" required></textarea>
+        </div>
+
+        <button class="ds-btn" type="submit">Enviar</button>
+    </form> 
+</section>
     </div>
 
 </section>

@@ -36,7 +36,7 @@
 </section>
 
  <button id="btnTop">ir arriba</button>
- <button id="modoOscuro">🌙</button>
+ <button id="modoOscuro">🌒</button>
  <script src="js/script.js"></script>
 
 
@@ -91,26 +91,26 @@
     <h2>REGISTRO</h2>
     <p>Contáctanos llenando todos los campos</p>
 
-    <form class="formulario">
+    <form  id = "miformulario" action = "guardar_solicitante.php" method= "POST">
         
         <div class="campo">
             <label>Nombre</label>
-            <input type="text" placeholder="Tu Nombre">
+            <input type="text"name="nombre" placeholder="Tu Nombre">
         </div>
 
         <div class="campo">
             <label>Teléfono</label>
-            <input type="tel" placeholder="Tu Teléfono">
+            <input type="tel" name="telefono"placeholder="Tu Teléfono">
         </div>
 
         <div class="campo">
             <label>Correo</label>
-            <input type="email" placeholder="Tu correo">
+            <input type="email"name="correo" placeholder="Tu correo">
         </div>
 
         <div class="campo">
             <label>Mensaje</label>
-            <textarea placeholder="Escribe tu mensaje"></textarea>
+            <textarea placeholder="Escribe tu mensaje"name="mensaje"></textarea>
         </div>
 
         <input class="boton-enviar" type="submit" value="Enviar">

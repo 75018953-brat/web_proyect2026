@@ -17,32 +17,34 @@
     <h1>Contacto</h1>
     <p>Completa el formulario y te responderé lo más pronto posible</p>
 
-    <form class="formulario">
+    <form id="miformulario" action="guardar_contactos.php" method="POST">
+    
+    <div class="campo">
+        <label>Nombre</label>
+        <input type="text" name="nombre" placeholder="Tu nombre" required>
+    </div>
 
-        <div class="campo">
-            <label>Nombre</label>
-            <input type="text" id="nombre" placeholder="Tu nombre">
-        </div>
+    <div class="campo">
+        <label>Teléfono</label>
+        <input type="tel" name="telefono" placeholder="Tu teléfono" required>
+    </div>
 
-        <div class="campo">
-            <label>Teléfono</label>
-            <input type="tel" placeholder="Tu teléfono">
-        </div>
+    <div class="campo">
+        <label>Correo</label>
+        <input type="email" name="correo" placeholder="Tu correo" required>
+    </div>
 
-        <div class="campo">
-            <label>Correo</label>
-            <input type="email" placeholder="Tu correo">
-        </div>
+    <div class="campo">
+        <label>Mensaje</label>
+        <textarea name="mensaje" placeholder="Escribe tu mensaje" required></textarea>
+    </div>
 
-        <div class="campo">
-            <label>Mensaje</label>
-            <textarea id="mensaje" placeholder="Escribe tu mensaje"></textarea>
-        </div>
+    <input class="boton-enviar" type="submit" value="Enviar">
 
-        <input class="boton-enviar" type="submit" value="Enviar">
+</form>
+</section>
 
-    </form>
-
+<section 
     <!-- BOTÓN WHATSAPP -->
     <a href="#" class="whatsapp" onclick="enviarWhatsApp()">
         <i class="fab fa-whatsapp"></i> Contactar por WhatsApp

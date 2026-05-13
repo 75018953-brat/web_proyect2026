@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // 🌙 Modo oscuro
+  // Modo oscuro
   const btnModo = document.getElementById("modoOscuro");
 
   if (btnModo) {
